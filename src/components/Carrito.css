@@ -1,0 +1,54 @@
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    margin-bottom: 5px;
+    display: grid;
+    grid-template-columns: 2fr 4fr 2fr 1fr 3fr;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+}
+
+li img {
+    justify-self: end;
+}
+
+li button {
+    justify-self: start;
+    background-color: rgb(247, 175, 148);
+}
+
+.cart-empty {
+    margin: 0;
+    padding-top: 30px;
+    z-index: 1;
+    text-align: center;
+    font-size: 30px;
+}
+
+.total-price {
+    position: sticky;
+    background-color: coral;
+    text-align: end;
+    bottom: 0;
+    right: 10px;
+    font-weight: bold;
+    font-size: xx-large;
+}
+
+.btn-quitar {
+    width: 30px;
+    cursor: pointer;
+}
+
+li button:hover {
+    background-color: azure;
+}
+
+.img-cart {
+    max-width: 40px;
+}

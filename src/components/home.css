@@ -1,0 +1,91 @@
+*{
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 1rem;
+}
+
+.card {
+  width: 100%;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  background-color: #FFA051;
+}
+
+h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  padding: 10px;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.titulo {
+  opacity: 0; 
+  animation: fadeInUp 1s ease-in-out forwards; 
+}
+
+h4 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+p{
+  padding: 10px;
+  text-align: center;
+}
+
+.img {
+  width: 50%;
+  object-fit: cover;
+  border-radius: 5px;
+  padding-top: 10px; 
+}
+
+.btn-img {
+  width: 30px;
+}
+
+.description{
+  font-size: 14px;
+  font-weight: normal;
+}
+
+.btn-mas {
+  border-style: none;
+  color: blue;
+  font-size: 12px;
+  font-style: oblique;
+  cursor: pointer;
+  background-color: #f7ae73;
+}
+
+@media screen and (max-width: 768px) {
+  .card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Centrar horizontalmente las tarjetas */
+  }
+  
+  .card{
+    width: 80%;
+  }
+}
